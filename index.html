@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання турів</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('hot-tours')">Гарячі тури</a></li>
+                <li><a href="#" onclick="showSection('my-bookings')">Мої бронювання</a></li>
+                <li><a href="#" onclick="showSection('contacts')">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Гарячі тури -->
+        <section id="hot-tours" class="content-section active">
+            <h2>Гарячі тури</h2>
+            <div class="tour-list">
+                <div class="tour-card">
+                    <img src="D:\\Фото\\Egypt.Giza.Sphinx.02_(cropped).jpg" alt="Єгипет">
+                    <h3>Єгипет</h3>
+                    <p>Тривалість: 7 днів</p>
+                    <p>Ціна: 500$</p>
+                    <button onclick="bookTour('Єгипет', '7 днів', 500)">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="D:\\Фото\\93e5cd68ae9a89f77020dead07f666ec.jpg" alt="Туреччина">
+                    <h3>Туреччина</h3>
+                    <p>Тривалість: 10 днів</p>
+                    <p>Ціна: 700$</p>
+                    <button onclick="bookTour('Туреччина', '10 днів', 700)">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="D:\\Фото\\12.jpg" alt="Італія">
+                    <h3>Італія</h3>
+                    <p>Тривалість: 5 днів</p>
+                    <p>Ціна: 800$</p>
+                    <button onclick="bookTour('Італія', '5 днів', 800)">Забронювати</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Мої бронювання -->
+        <section id="my-bookings" class="content-section">
+            <h2>Мої бронювання</h2>
+            <ul id="booking-list">
+                <li>Поки що немає заброньованих турів.</li>
+            </ul>
+        </section>
+
+        <!-- Контакти -->
+        <section id="contacts" class="content-section">
+            <h2>Контакти</h2>
+            <p>Email: support@tours.com</p>
+            <p>Телефон: +380 67 123 45 67</p>
+            <h3>Зворотній зв’язок</h3>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Ваше ім'я" required>
+                <input type="email" id="email" placeholder="Ваш Email" required>
+                <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+            <h3>Місцезнаходження</h3>
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Платформа бронювання турів</p>
+    </footer>
+
+</body>
+</html>

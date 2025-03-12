@@ -1,0 +1,230 @@
+/* Загальні стилі */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0e68c, #dcd77f);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 50px; /* Запас для футера */
+}
+
+/* Заголовок і навігація */
+header {
+    background-color: rgba(128, 89, 255, 0.8);
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Золотистий колір при виборі вкладки */
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #f1a500;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+/* Стилі для секцій */
+.content-section {
+    display: none;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Градієнтні фони для різних сторінок */
+#hot-tours {
+    background: linear-gradient(135deg, #f0a500, #f3e6a0);
+    min-height: 500px;
+}
+
+#my-bookings {
+    background: linear-gradient(135deg, #7fa9f7, #b3c9f7);
+    min-height: 500px;
+}
+
+#contacts {
+    background-color: #cce7ff;
+    min-height: 500px;
+}
+
+/* Стилі для карток турів */
+.tour-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.tour-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: white;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Стилі для кнопок */
+button {
+    background-color: #6dbf5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #4cae3d;
+}
+
+/* Стилі для форми */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Футер */
+footer {
+    background-color: #29c3f7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Адаптивний футер для маленьких екранів */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* ======================= */
+/*  Адаптивність           */
+/* ======================= */
+
+/* Планшети (максимальна ширина 1024px) */
+@media (max-width: 1024px) {
+    .tour-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card {
+        width: 80%;
+    }
+}
+
+/* Мобільні пристрої (максимальна ширина 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .tour-card {
+        width: 90%;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+/* Дуже малі пристрої (максимальна ширина 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .tour-card {
+        width: 100%;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
