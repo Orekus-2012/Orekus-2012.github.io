@@ -3,68 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мої бронювання</title>
+    <title>Бронювання турів</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
+            <a href="index.html" class="logo">Райські тури</a>
             <ul>
-                <li><a href="index.html">Гарячі тури</a></li>
-                <li><a href="bookings.html" class="active">Мої бронювання</a></li>
+                <li><a href="index.html" class="active">Гарячі тури</a></li>
+                <li><a href="bookings.html">Мої бронювання</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <main>
-        <h2>Мої бронювання</h2>
-        
-        <div class="table-container">
-            <table class="booking-table">
-                <thead>
-                    <tr>
-                        <th>Назва туру</th>
-                        <th>Дати</th>
-                        <th>Статус</th>
-                        <th>Ціна</th>
-                        <th>Операції</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Тур по Італії</td>
-                        <td>01.05.2025 - 10.05.2025</td>
-                        <td>Заброньовано</td>
-                        <td>15,000 грн</td>
-                        <td>
-                            <button class="edit-btn">Редагувати</button>
-                            <button class="cancel-btn">Скасувати</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Відпочинок на Таїланді</td>
-                        <td>15.06.2025 - 25.06.2025</td>
-                        <td>Підтверджено</td>
-                        <td>18,000 грн</td>
-                        <td>
-                            <button class="edit-btn">Редагувати</button>
-                            <button class="cancel-btn">Скасувати</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Тур по Німеччині</td>
-                        <td>10.07.2025 - 20.07.2025</td>
-                        <td>Відмінено</td>
-                        <td>12,000 грн</td>
-                        <td>
-                            <button class="edit-btn">Редагувати</button>
-                            <button class="cancel-btn">Скасувати</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <section>
+            <h2>Гарячі тури</h2>
+            <div class="tour-list">
+                <div class="tour-card">
+                    <img src="../Lab_1/Тури/Egypt.jpg" alt="Єгипет">
+                    <h3>Єгипет</h3>
+                    <p>Тривалість: 7 днів</p>
+                    <p>Ціна: 500$</p>
+                    <button class="book-now">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="../Lab_1/Тури/turkey.jpg" alt="Туреччина">
+                    <h3>Туреччина</h3>
+                    <p>Тривалість: 10 днів</p>
+                    <p>Ціна: 700$</p>
+                    <button class="book-now">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="../Lab_1/Тури/Italy.jpg" alt="Італія">
+                    <h3>Італія</h3>
+                    <p>Тривалість: 5 днів</p>
+                    <p>Ціна: 800$</p>
+                    <button class="book-now">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="../Lab_1/Тури/Germany.jpg" alt="Німеччина">
+                    <h3>Німеччина</h3>
+                    <p>Тривалість: 7 днів</p>
+                    <p>Ціна: 600$</p>
+                    <button class="book-now">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="../Lab_1/Тури/thailand.jfif" alt="Таїланд">
+                    <h3>Таїланд</h3>
+                    <p>Тривалість: 10 днів</p>
+                    <p>Ціна: 750$</p>
+                    <button class="book-now">Забронювати</button>
+                </div>
+                <div class="tour-card">
+                    <img src="../Lab_1/Тури/Spain.jpg" alt="Іспанія">
+                    <h3>Іспанія</h3>
+                    <p>Тривалість: 6 днів</p>
+                    <p>Ціна: 650$</p>
+                    <button class="book-now">Забронювати</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
