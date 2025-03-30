@@ -4,7 +4,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    overflow-x: hidden;  /* Це приховає горизонтальний скрол */
+    overflow-x: hidden; 
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 main {
     flex: 1;
-    padding-bottom: 50px; /* Щоб футер не перекривався */
+    padding-bottom: 50px; 
 }
 
 header {
@@ -27,6 +27,21 @@ header {
     padding: 15px 0;
     margin-bottom: 0;
 }
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #f1a500;
+}
+
 
 nav ul {
     list-style: none;
@@ -71,7 +86,7 @@ nav ul li a.active {
     text-align: center;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 100%;  /* щоб картки не виходили за межі */
+    max-width: 100%;  
     box-sizing: border-box;
 }
 
@@ -111,7 +126,7 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    margin-top: auto;  /* Цей стиль гарантує, що футер буде внизу */
+    margin-top: auto; 
 }
 
 form {
@@ -153,9 +168,8 @@ button[type="submit"]:hover {
     margin: 20px auto;
 }
 
-/* Стиль для таблиці "Мої бронювання" */
 .table-container {
-    overflow-x: auto; /* Додає горизонтальну прокрутку, якщо таблиця не вміщується */
+    overflow-x: auto;
     margin: 20px 0;
 }
 
