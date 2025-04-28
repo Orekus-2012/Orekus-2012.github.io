@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання турів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Райські тури</a>
+            <ul>
+                <li><a href="index.html" class="active">Гарячі тури</a></li>
+                <li><a href="bookings.html">Мої бронювання</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tour-list">
+        <h2>Гарячі тури</h2>
+        <div class="tour-list">
+        </div>
+    </section>
+
+    <div id="date-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Виберіть дату для туру</h3>
+            <input type="date" id="tour-date" />
+            <button id="confirm-date">Підтвердити</button>
+            <button id="cancel-date">Скасувати</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Платформа бронювання турів</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

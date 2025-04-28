@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої бронювання</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Райські тури</a>
+            <ul>
+                <li><a href="index.html">Гарячі тури</a></li>
+                <li><a href="bookings.html" class="active">Мої бронювання</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Мої бронювання</h2>
+        
+        <div class="table-container">
+            <table class="booking-table">
+                <thead>
+                    <tr>
+                        <th>Назва туру</th>
+                        <th>Тривалість</th>
+                        <th>Дата</th>
+                        <th>Ціна</th>
+                        <th>Скасування туру</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <section>
+        <h3>Популярні туристичні місця</h3>
+        <div id="map" style="height: 500px; width: 100%;"></div>
+    </section>
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Платформа бронювання турів</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
