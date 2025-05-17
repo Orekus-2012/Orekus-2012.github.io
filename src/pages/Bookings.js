@@ -24,7 +24,7 @@ const BookingsPage = () => {
       }).addTo(mapRef.current);
 
       // Завантаження даних для мапи
-      fetch('/places.json')
+      fetch(`${process.env.PUBLIC_URL}/places.json`)
         .then(response => response.json())
         .then(places => {
           places.forEach(place => {

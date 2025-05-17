@@ -227,10 +227,17 @@ html, body {
     text-align: center;
     border: 1px solid #ddd;
   }
+
+  /* Додай цей стиль у твій CSS */
+.book-now.booked {
+  background: #28a745;
+  color: rgb(255, 255, 255);
+  cursor: not-allowed;
+}
   
   .booking-table th {
     background-color: #f1a500;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   
   .booking-table tr:nth-child(even) {

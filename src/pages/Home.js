@@ -11,13 +11,14 @@ const HomePage = () => {
 
 
   useEffect(() => {
-    fetch('/tours.json')
-      .then(response => response.json())
-      .then(data => {
-        setTours(data);
-      })
-      .catch(error => console.error('Помилка завантаження турів:', error));
-  }, []);
+  fetch(`${process.env.PUBLIC_URL}/tours.json`)
+    .then(response => response.json())
+    .then(data => {
+      setTours(data);
+    })
+    .catch(error => console.error('Помилка завантаження турів:', error));
+}, []);
+
 
   const handleBook = (tour) => {
     const alreadyBooked = bookedTours.find(b => b.destination === tour.destination);
@@ -40,20 +41,26 @@ const HomePage = () => {
     setActiveTour(null);
   };
 
+  const [sortAsc, setSortAsc] = useState(true);
+
   const handleSortByPrice = () => {
     const sortedTours = [...tours].sort((a, b) => {
       const priceA = parseFloat(a.price.replace(/[^0-9.]/g, ''));
       const priceB = parseFloat(b.price.replace(/[^0-9.]/g, ''));
-      return priceA - priceB;
+      return sortAsc ? priceA - priceB : priceB - priceA;
     });
     setTours(sortedTours);
+    setSortAsc(!sortAsc);
   };
-
+  
   return (
     <section id="tour-list">
       <h2>Гарячі тури</h2>
       <button onClick={handleSortByPrice}>
-        Сортувати за ціною (від дешевших до дорожчих)
+         {sortAsc
+            ? 'Сортувати за зростанням ціни'
+            : 'Сортувати за зменшенням ціни'
+         }
       </button>
       <div className="tour-list">
         {tours.map((tour, index) => {
@@ -64,14 +71,14 @@ const HomePage = () => {
               <h3>{tour.destination}</h3>
               <p>Тривалість: {tour.duration}</p>
               <p>Ціна: {tour.price}</p>
-              <button 
-                className="book-now" 
+              <button
+                className={`book-now${alreadyBooked ? ' booked' : ''}`}
                 onClick={() => handleBook(tour)}
                 disabled={!!alreadyBooked}
-                style={alreadyBooked ? { backgroundColor: 'green', color: 'white' } : {}}
               >
                 {alreadyBooked ? 'Заброньовано' : 'Забронювати'}
               </button>
+
             </div>
           );
         })}
