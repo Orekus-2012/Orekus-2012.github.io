@@ -8,8 +8,6 @@
 # testing
 /coverage
 
-/Orekus-2012.github.io/
-
 # misc
 .DS_Store
 .env.local

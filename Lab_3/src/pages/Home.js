@@ -11,13 +11,14 @@ const HomePage = () => {
 
 
   useEffect(() => {
-    fetch('/tours.json')
-      .then(response => response.json())
-      .then(data => {
-        setTours(data);
-      })
-      .catch(error => console.error('Помилка завантаження турів:', error));
-  }, []);
+  fetch(`${process.env.PUBLIC_URL}/tours.json`)
+    .then(response => response.json())
+    .then(data => {
+      setTours(data);
+    })
+    .catch(error => console.error('Помилка завантаження турів:', error));
+}, []);
+
 
   const handleBook = (tour) => {
     const alreadyBooked = bookedTours.find(b => b.destination === tour.destination);
