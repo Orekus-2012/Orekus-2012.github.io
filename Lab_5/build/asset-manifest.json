@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lab_5/build/static/css/main.33bf0518.css",
+    "main.js": "/Lab_5/build/static/js/main.e9c30ee9.js",
+    "index.html": "/Lab_5/build/index.html",
+    "main.33bf0518.css.map": "/Lab_5/build/static/css/main.33bf0518.css.map",
+    "main.e9c30ee9.js.map": "/Lab_5/build/static/js/main.e9c30ee9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33bf0518.css",
+    "static/js/main.e9c30ee9.js"
+  ]
+}
