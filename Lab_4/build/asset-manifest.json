@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lab_4/build/static/css/main.58c399ec.css",
+    "main.js": "/Lab_4/build/static/js/main.44ca57cd.js",
+    "index.html": "/Lab_4/build/index.html",
+    "main.58c399ec.css.map": "/Lab_4/build/static/css/main.58c399ec.css.map",
+    "main.44ca57cd.js.map": "/Lab_4/build/static/js/main.44ca57cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58c399ec.css",
+    "static/js/main.44ca57cd.js"
+  ]
+}
