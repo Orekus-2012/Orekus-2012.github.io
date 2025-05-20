@@ -1,0 +1,38 @@
+[
+    {
+        "destination": "Єгипет",
+        "duration": "7 днів",
+        "price": "500$",
+        "image": "/Egypt.jpg"
+    },
+    {
+        "destination": "Туреччина",
+        "duration": "10 днів",
+        "price": "700$",
+        "image": "/turkey.jpg"
+    },
+    {
+        "destination": "Італія",
+        "duration": "5 днів",
+        "price": "800$",
+        "image": "/Italy.jpg"
+    },
+    {
+        "destination": "Німеччина",
+        "duration": "7 днів",
+        "price": "600$",
+        "image": "/germany.jpg"
+    },
+    {
+        "destination": "Таїланд",
+        "duration": "10 днів",
+        "price": "750$",
+        "image": "/thailand.jfif"
+    },
+    {
+        "destination": "Іспанія",
+        "duration": "6 днів",
+        "price": "650$",
+        "image": "/Spain.jpg"
+    }
+]

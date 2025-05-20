@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lab_3/build/static/css/main.abbe29db.css",
+    "main.js": "/Lab_3/build/static/js/main.df26b191.js",
+    "index.html": "/Lab_3/build/index.html",
+    "main.abbe29db.css.map": "/Lab_3/build/static/css/main.abbe29db.css.map",
+    "main.df26b191.js.map": "/Lab_3/build/static/js/main.df26b191.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abbe29db.css",
+    "static/js/main.df26b191.js"
+  ]
+}
